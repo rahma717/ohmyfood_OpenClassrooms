@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/layout/main.scss:./public/css/style.css",
+    "sass-header": "sass --watch ./sass/layout/header.scss:./public/css/header.css",
+    "sass-footer": "sass --watch ./sass/layout/footer.scss:./public/css/footer.css",
+    "sass-navigation": "sass --watch ./sass/layout/navigation.scss:./public/css/navigation",
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahma717/ohmyfood_OpenClassrooms.git"
+  },
+  "author": "Rahma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahma717/ohmyfood_OpenClassrooms/issues"
+  },
+  "homepage": "https://github.com/rahma717/ohmyfood_OpenClassrooms#readme"
+}

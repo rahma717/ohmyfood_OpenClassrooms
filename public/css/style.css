@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
 :root{
     --First-color:#99E2D0;
     --second-color:#008766;
@@ -16,18 +18,17 @@ html, body {
 }
 
 .header {
+    font-family:"shrikhand", cursive;
     box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.15);
     text-align: center;
-    position: relative;
+    padding: 2.5rem;
+
 }
-#logo {
-    margin-top: 1.6rem;
-    
-}
+
 h2 {
     font-size: 20px;
     color: #353535;
-   
+    font-family: 'Shrikhand';
 }
 main div {
  background-color: lightgrey;
@@ -138,6 +139,8 @@ footer {
 }
 .footer_logo {
     color: white;
+    font-family: "shrikhand";
+    margin-left: 3rem;
    
 }
  ul {
