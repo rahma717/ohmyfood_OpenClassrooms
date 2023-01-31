@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/layout/main.scss:./public/css/style.css",
-    "sass-header": "sass --watch ./sass/layout/header.scss:./public/css/header.css",
-    "sass-footer": "sass --watch ./sass/layout/footer.scss:./public/css/footer.css",
-    "sass-navigation": "sass --watch ./sass/layout/navigation.scss:./public/css/navigation",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    
     
   },
   "repository": {

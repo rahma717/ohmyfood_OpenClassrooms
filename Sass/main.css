@@ -1,0 +1,56 @@
+/* les couleurs du  header */
+/* Les couleurs du footer */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+.header {
+  box-shadow: 1px 4px 11px 0px rgba(128, 128, 128, 0.2);
+  text-align: center;
+  padding: 10px;
+}
+.header__title {
+  font-family: "Shrikhand";
+}
+
+.Trio ol {
+  display: flex;
+  flex-direction: column;
+}
+.Trio li {
+  border: 1px solid black;
+  background-color: #f7f7f7;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.localisation {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.localisation i {
+  display: inline-block;
+  margin-right: 3px;
+}
+.localisation input {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 0 1rem;
+}/*# sourceMappingURL=main.css.map */

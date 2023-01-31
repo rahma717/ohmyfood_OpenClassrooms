@@ -1,0 +1,157 @@
+/* création du loader */
+.Loader {
+ border-top: 10px solid #2c3e50;
+ border-bottom: 10px solid #e74c3c;
+ border-left: 10px solid limegreen;
+ border-right: 10px solid hotpink ;
+ border-radius: 50%;
+ height: 100px;
+ width: 100px;
+ animation: spin 3s linear forwards;
+ /* placement du loader au milieu de la page */
+ margin: auto;
+ position: absolute;
+ top: 0; left: 0; right: 0; bottom: 0;
+}
+ /* Animation du loader */
+ @-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        opacity: 0;
+    }
+ }
+ @keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        opacity: 1;
+ }
+   100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
+}
+}
+.container {
+    width: 100%;
+    animation: container 3000ms;
+}
+@keyframes container {
+    0% {
+        transform: translateX(-9999px);
+        
+    }
+    100% {
+        transform: translateX(0);
+        
+    }
+    
+}
+
+.localisation {
+    background-color:$grey;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+ i { display: inline-block;
+    margin-left: 4rem;
+}
+    input {
+        font-family: "Roboto";
+        border:1px solid transparent;
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 19px;
+        
+    }
+}
+.explorer {
+    background-color: $lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ &__title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ &__subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+}
+.Restaurants {
+    background-color: $lightgrey;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__title {
+    margin-top: 5px;
+    margin-bottom: 15px ;
+}
+.cards__restaurants {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+@media screen and (min-width: 992px)
+{
+    display: flex;
+    flex-direction: row;
+} 
+/* badge new */
+.badge
+{
+    background: $lightgreen;
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70%;
+    left: 70%;
+}
+/*font awseome heart with animation */ 
+.coeur .fa-heart
+{
+    display: flex;
+    justify-content: end;
+    margin-top: -28px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.coeur:hover .fa-heart, .coeur .fa-solid
+{
+    display: none;
+}
+.coeur:hover .fa-solid
+{
+    display: inline;
+    margin-right: 15px;  
+    background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: loom 2s;
+}   
+@keyframes loom
+{
+0%{
+    opacity: 0;
+}
+60%{
+    opacity: 0.60;
+}
+100%{
+    opacity: 1;
+}
+} 
+}

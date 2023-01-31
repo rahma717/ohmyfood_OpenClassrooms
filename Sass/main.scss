@@ -1,13 +1,25 @@
-@import "components/button" ;
-@import "components/card";
-@import "components/form";
+@import "./Utils/variables";
 
-@import "lyaout/footer";
-@import "lyaout/header";
-@import "lyaout/naviagation";
+@import "./Components/button" ;
+@import "./Components/card";
+@import "./Components/form";
 
-@import "pages/index";
-@import "pages/menu-1" ;
-@import "pages/menu-2";
-@import "pages/menu-3";
-@import "pages/menu-4";
+@import "./Layout/footer";
+@import "./Layout/header";
+@import "./Layout/navigation";
+@import "./Layout/Function-Button";
+
+@import "./Pages/index";
+@import "./Pages/menu-1";
+@import "./Pages/menu-2";
+@import "./Pages/menu-3";
+@import "./Pages/menu-4";
+
+
+
+// @import "./Themes";
+
+// @import "./Vendors";
+
+@import "./Base/base";
+

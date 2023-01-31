@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+    background-color: $darkgrey-footer;
+    padding: 25px;
+
+&__container {
+    display: inline;
+    padding: 0 40px;
+    max-width: 1200px;
+}
+.footer__logo {
+    color: $white-footer;
+    font-size: 24px;
+    font-family: "shrikhand",sans-serif;
+    margin-left: 1rem;
+    margin-bottom: 5px;
+    margin-top: -5px;
+   
+}
+ul {
+    color:$white-footer;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 1rem;
+
+}
+.footer__link {
+    color:$white-footer;
+    text-decoration: none;
+
+}
+}
+.fa-solid {
+    margin-right: 10px;
+}

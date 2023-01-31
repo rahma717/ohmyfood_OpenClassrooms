@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="/public/css/header.css">
     <link rel="stylesheet" href="/public/css/footer.css">
     <link rel="stylesheet" href="/public/css/navigation.css">
@@ -22,14 +22,13 @@
   </head>
 <body>
   <header class="header">
-    <h1>ohmyfood</h1>
-    </header>
-        <div classe="image_menu-3">
-            <img src="../assets/images/menu-3.jpg" alt="plat du menu la note enchantée">
-        </div>
-     
-
-        <main classe="menu_container">
+    <div class="arrow"><a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+    <h1 class="header__title">ohmyfood</h1>
+  </header>
+       <main class="menu_container">
+        <div class="image_menu-3">
+          <img src="../assets/images/images/menu-3.jpg" alt="plat du menu la note enchantée">
+      </div>
             <header class="menu_header">
             <h2 class="menu_title">La note enchantée</h2>
             <button class="Heart_Btn">
@@ -176,24 +175,24 @@
   </div>
      </main>
      <!--footer-->
-    <footer class="footer">
-        <div class="footer_container">
-          <div class="footer_logo">ohmyfood</div>
-          <ul class="footer_list_A">
-          <li class="footer_list-B">
-          <i class="fa-solid fa-utensils"></i>Proposer un restaurant
-          </li>
-         <li class="footer_list-B">
-          <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">ohmyfood</div>
+      <ul class="footer__list-ul">
+        <li class="footer__list-li">
+          <a class="footer__link" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
         </li>
-        <li class="footer_list-B">
-          Mentions légales
+        <li class="footer__list-li">
+          <a class="footer__link" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
         </li>
-        <li class="footer_list-B">
+        <li class="footer__list-li">
+          <a class="footer__link" href="#">Mentions légales</a>
+        </li>
+        <li class="footer__list-li">
           <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
-         </li>
-        </ul>
-        </div>
- </footer>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
