@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="Sass/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -66,41 +66,50 @@
       </section>
       <!--les 4 restaurants-->
       <section class="Restaurants">
+        <h2 class="Restaurants__title">Restaurants</h2>
         <div class="cards">
-          <h2 class="cards__title">Restaurants</h2>
-          <div class="cards__restaurants">
+         <div class="cards__restaurants">
             <a href="./restaurants/menu-1.html" class="card">
               <img class="card__img" src="assets/images/images/menu-1.jpg" alt="Plat de la palette du goût">
               <div class="badge">Nouveau</div>
-              <h3 class="restaurant-name">La palette du goût</h3><a class="coeur"><i class="fa-regular fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i></a>
+              <h3 class="restaurant-name">La palette du goût
+                <span class="heart">
+                  <i class="fill far fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
               <p class="restaurant-location">Ménilmontant</p>
-            </a>
           </div>
           <div class="cards__restaurants">
             <a href="./restaurants/menu-3.html" class="card">
               <img class="card__img" src="assets/images/images/menu-2.jpg" alt="Plat de la note enchantée ">
               <div class="badge">Nouveau</div>
-              <h3 class="restaurant-name">La note enchantée</h3><a class="coeur"><i class="fa-regular fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i></a>
+              <h3 class="restaurant-name">La note enchantée
+                <span class="heart">
+                  <i class="fill far fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
               <p class="restaurant-location">Charonne</p>
-              <i class="fa-regular fa-heart"></i>
-            </a>
           </div>
           <div class="cards__restaurants">
             <a href="./restaurants/menu-4.html" class="card">
               <img class="card__img" src="assets/images/images/menu-3.jpg" alt="Le plat à la française">
-              <h3 class="restaurant-name">À la française</h3><a class="coeur"><i class="fa-regular fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i></a>
-              <p class="resraurant-location">Cité Rouge</p>
-              <i class="fa-regular fa-heart"></i>
-            </a>
+              <h3 class="restaurant-name">À la française
+                <span class="heart">
+                  <i class="fill far fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
+              <p class="restaurant-location">Cité Rouge</p>
           </div>
           <div class="cards__restaurants">
             <a href="./restaurants/menu-2.html" class="card">
               <img class="card__img" src="assets/images/images/menu-4.jpg" alt="Le plat le délice des sens">
-              <h3 class="restaurant-name">Le délice des sens</h3><a class="coeur"><i class="fa-regular fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i></a>
+              <h3 class="restaurant-name">Le délice des sens
+                <span class="heart">
+                  <i class="fill far fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
               <p class="restaurant-location">Folie-Méricourt</p>
-              <i class="fa-regular fa-heart"></i>
-            </a>
-          </div>
+           </div>
         </div>
   </div>
   </section>

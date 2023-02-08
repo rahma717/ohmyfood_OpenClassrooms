@@ -7,6 +7,13 @@
     display: inline;
     padding: 0 40px;
     max-width: 1200px;
+    @media screen and (min-width: 992px)
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;   
+    }
 }
 .footer__logo {
     color: $white-footer;
@@ -20,10 +27,12 @@
 ul {
     color:$white-footer;
     list-style-type: none;
-    font-size: 16px;
-    font-weight: 400;
     margin-left: 1rem;
-
+    @media screen and (min-width: 992px)
+    {
+        display: flex;
+        gap: 20px;
+    }
 }
 .footer__link {
     color:$white-footer;
