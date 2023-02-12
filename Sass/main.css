@@ -490,10 +490,8 @@
   gap: 15px;
 }
 
-.menu_list_1, .menu_list_2, .menu_list_3, .menu_list_4, .menu_list_5, .menu_list_6, .menu_list_7, .menu_list_8, .menu_list_9 {
+.menu__list-1, .menu_list_2, .menu_list_3, .menu_list_4, .menu_list_5, .menu_list_6, .menu_list_7, .menu_list_8, .menu_list_9 {
   background-color: white;
-  display: flex;
-  padding: 10px;
   box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
 }
@@ -511,14 +509,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
-
-.menu_list_1 {
-  background-color: white;
-  display: flex;
-  padding: 10px;
-  box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
 }
 
 .arrow {
@@ -559,11 +549,6 @@ img {
   color: #101010;
 }
 
-.Heart_Btn {
-  border-style: none;
-  font-size: 20px;
-}
-
 h3 {
   font-family: "Roboto";
   font-style: normal;
@@ -573,6 +558,10 @@ h3 {
   text-transform: uppercase;
   margin: 5px 0 11px;
   color: #000000;
+  padding-left: 3px;
+}
+h3 .Sub_menu__title {
+  border-bottom: 3px solid #99E2D0;
 }
 
 h4 {
@@ -620,12 +609,47 @@ p {
   gap: 15px;
 }
 
-.menu_list_1 {
-  background-color: white;
+.menu__Card {
+  background: #FFFFFF;
+  border-radius: 15.04px;
+  margin: 15px;
+  height: 78.07px;
   display: flex;
-  padding: 10px;
-  box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.menu__Card__Card-text {
+  margin: 15px 0 0 5px;
+  height: 58.07px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+.menu__Card__list-title {
+  font-size: 18px;
+  line-height: 21.09px;
+  margin: 0 0 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__Card__list-description {
+  font-size: 18px;
+  line-height: 17.58px;
+  margin: 0 5px 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__Card__list-price {
+  font-size: 18px;
+  line-height: 17.58px;
+  color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 15px 0 0;
 }
 
 *,

@@ -7,25 +7,40 @@
     }
     
 img {
-    height: 275px;
+    height: 390px;
     width: 100%;
     object-fit: cover;
     
 }
-.menu_container {
+.menu__container {
     background-color: $lightgrey;
     border-radius: 45px 45px 0px 0px;
     position: relative;
     top: -30px;
     margin: 0px 0px -30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 992px)
+    {
+       
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 12px 5px 12px 20px;
+        gap: 11px;
+        
+    }
+
 
 }
-.menu_header {
+.menu__section {
         margin-top: 5px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items:center;
 }
-.menu_title {
+.menu__title {
         font-family: 'Shrikhand';
         font-style: italic;
         font-weight: 400;
@@ -33,13 +48,14 @@ img {
         line-height: 41px;
         color: #101010;   
     }
-    .Heart_Btn {
-        border-style: none;
-        font-size: 20px;
-
-    }
-
- h3 {
+    
+.Sub__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+    
+.Sub__menu-title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -48,7 +64,56 @@ img {
     text-transform: uppercase;
     margin: 5px 0 11px;
     color:  $black;
+    padding-left: 3px;
+    border-bottom: 3px solid $mint;
+    width: 37px;
+
+}    
+
+
+
+/* animations cards */
+.Sub__menu
+{
+    animation: Sub__menu 2500ms forwards;
 }
+@keyframes Sub__menu{
+0% {
+    transform: translateX(-9999px);
+    }
+
+100% {
+    transform: translateX(0);
+}
+}
+.Sub__menu
+{
+    animation: Sub__menu 3500ms forwards;
+}
+@keyframes Sub__menu{
+0% {
+    transform: translateX(-9999px);
+}
+
+100% {
+    transform: translateX(0);
+}
+}
+.Sub__menu
+{
+    animation: Sub__menu 4500ms forwards;
+}
+@keyframes Sub__menu{
+0% {
+    transform: translateX(-9999px);
+}
+
+100% {
+    transform: translateX(0);
+}
+}
+
+
  h4 {
     font-size: 18px;
     line-height: 21px;
@@ -59,11 +124,116 @@ img {
     margin-left: 5px;
     color: $black;
  }
- .menu_list_price {
+ 
+.menu__Card
+{
+    background: $white;
+    border-radius: 15.04px;
+    margin: 15px;
+  
     display: flex;
-    justify-content: end;
-    align-items: end;
- }
+    justify-content: space-between;
+    cursor: pointer;
+&__Card-text
+{
+    margin: 15px 0 0 5px;
+    height: 58.07px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+&__list-title
+{
+    font-size: 18px;
+    line-height: 21.09px;
+    margin: 0 0 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+&__list-description
+{
+    
+    font-size: 18px;
+    line-height: 17.58px;
+    margin: 0 5px 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+}
+.menu__list-price
+{
+    font-size: 18px;
+    line-height: 17.58px;
+    color: $darkcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 15px 0 0;
+}
+
+
+/* checkbox animation */
+
+.icon .fa-circle-check
+{
+    color: $white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 30px;
+}
+.icon:hover .fa-circle-check
+{
+    color: $white;
+    clip-path: circle(40%);
+    width: 30px;
+}
+.menu__list-checkbox 
+{
+    display:flex;
+    align-items: center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: $white;
+    color: $white;
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+}
+
+.menu__Card:hover .menu__list-animation
+{ 
+    color: $white;
+    display:flex;
+    align-items: center ;
+    border-radius: 0 15.04px 15.04px 0;
+    background: $mint;
+    height: 58px;
+    animation: expand 1s forwards;
+}
+
+@keyframes expand
+{
+    0% {
+        width: 0px;
+        padding: 0px;
+    }
+    100% {
+        width: 50px;
+        padding: 10px;
+    }
+}
+
+.menu__list-1, .menu__list-2, .menu__list-3, .menu__list-4, .menu__list-5, .menu__list-6, .menu__list-7, .menu__list-9, .menu__list-9  {
+    background-color: white;
+    box-shadow: 2px 1px 8px -3px rgb(0 0 0 / 10%);
+    border-radius: 1rem;
+}
+
+/* command Button */
+
 .Bottom_Btn {
     display: flex;
     justify-content: center;
@@ -84,17 +254,4 @@ img {
         transform: scale(1.2);
         opacity: 0.9;
 }
-}
-
- .Sub_menu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.menu_list_1 {
-    background-color: white;
-    display: flex;
-    padding: 10px;
-    box-shadow: 2px 1px 8px -3px rgb(0 0 0 / 10%);
-    border-radius: 1rem
 }
