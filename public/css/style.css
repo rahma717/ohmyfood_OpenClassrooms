@@ -358,18 +358,6 @@
   }
 }
 
-.Sub__menu {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.menu__list-1, .menu__list-2, .menu__list-3, .menu__list-4, .menu__list-5, .menu__list-6, .menu__list-7, .menu__list-9, .menu__list-9 {
-  background-color: white;
-  box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-}
-
 .arrow {
   position: absolute;
   left: 20px;
