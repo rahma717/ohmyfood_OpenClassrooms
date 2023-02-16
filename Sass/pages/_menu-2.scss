@@ -4,13 +4,12 @@
     & i {
         color: $darkgrey;
     }
-    }
+}
     
 img {
-    height: 390px;
-    width: 100%;
     object-fit: cover;
-    
+    height: 390px;
+    width: 100%;  
 }
 .menu__container {
     background-color: $lightgrey;
@@ -67,7 +66,6 @@ img {
     padding-left: 3px;
     border-bottom: 3px solid $mint;
     width: 37px;
-
 }    
 
 
@@ -162,8 +160,8 @@ img {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-}
-.menu__list-price
+
+&__list-price
 {
     font-size: 18px;
     line-height: 17.58px;
@@ -173,64 +171,89 @@ img {
     align-items: center;
     margin: 12px 15px 0 0;
 }
-
+}
 
 /* checkbox animation */
 
-.icon .fa-circle-check
-{
+.icon .fa-circle-check {
     color: $white;
     cursor: pointer;
     display: flex;
     align-items: center;
     width: 30px;
 }
-.icon:hover .fa-circle-check
-{
+.icon:hover .fa-circle-check {
     color: $white;
     clip-path: circle(40%);
     width: 30px;
 }
-.menu__list-checkbox 
-{
+.menu__list-checkbox {
     display:flex;
     align-items: center;
     border-radius: 0 15.04px 15.04px 0;
     background: $white;
     color: $white;
-    width: 0px;
-    height: 0px;
+    width: 50px;
+    height: 10px;
     cursor: pointer;
+    visibility: hidden;
 }
-
-.menu__Card:hover .menu__list-animation
-{ 
+ .menu__list-animation { 
     color: $white;
     display:flex;
     align-items: center ;
     border-radius: 0 15.04px 15.04px 0;
     background: $mint;
     height: 58px;
-    animation: expand 1s forwards;
+    visibility: hidden;
+    animation: shrink 1s forwards;
+    transition: all 1s;
 }
 
-@keyframes expand
-{
+.menu__Card:hover .menu__list-animation {
+    animation: expand 1s forwards;
+  }
+
+  @keyframes expand {
     0% {
-        width: 0px;
-        padding: 0px;
+      visibility: visible;
+      width: 0px;
+      padding: 0px;
     }
     100% {
-        width: 50px;
-        padding: 10px;
+      width: 50px;
+      padding: 10px;
+      visibility: visible;
     }
-}
-
-.menu__list-1, .menu__list-2, .menu__list-3, .menu__list-4, .menu__list-5, .menu__list-6, .menu__list-7, .menu__list-9, .menu__list-9  {
+  }
+  
+  @keyframes shrink {
+    0% {
+      width: 50px;
+      padding: 10px;
+      visibility: visible;
+    }
+  
+    100% {
+      visibility: hidden;
+      width: 0px;
+      padding: 0px;
+    }
+  }
+  
+  .menu__list-1,
+  .menu__list-2,
+  .menu__list-3,
+  .menu__list-4,
+  .menu__list-5,
+  .menu__list-6,
+  .menu__list-7,
+  .menu__list-8,
+  .menu__list-9 {
     background-color: white;
     box-shadow: 2px 1px 8px -3px rgb(0 0 0 / 10%);
     border-radius: 1rem;
-}
+  }
 
 /* command Button */
 
