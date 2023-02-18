@@ -21,18 +21,16 @@
         }
     }
     & li {
-        border:1px solid black ;
+        border: 1px solid $lightgrey;
         background-color: $lightgrey;
         border-radius:20px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        @include base-shadow;
         display: flex;
         align-items: center;
         padding: 10px;  
 
     }
-     li:hover {
-        background-color: $lightviolet;
-   }
+   
     #cercle1, #cercle2, #cercle3 {
         background: $violet;
         border-radius: 50%;
@@ -52,8 +50,12 @@
 
     }
 
-    .Trio__li:hover .fa-mobile-screen-button:hover, .fa-solid:hover, .fa-store:hover {
+    .fa-mobile-screen-button:hover, .fa-solid:hover, .fa-store:hover {
         background-color: $violet;
+        transform: scale(1.02);
       }
     }
     
+    .Function-Button li:hover {
+        background: $lightviolet;
+    }

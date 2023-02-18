@@ -166,16 +166,13 @@
   }
 }
 .Function-Button li {
-  border: 1px solid black;
+  border: 1px solid #F7F7F7;
   background-color: #F7F7F7;
   border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 1px 16px -3px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   padding: 10px;
-}
-.Function-Button li:hover {
-  background-color: #F5EDFF;
 }
 .Function-Button #cercle1, .Function-Button #cercle2, .Function-Button #cercle3 {
   background: #9356DC;
@@ -193,8 +190,13 @@
 .Function-Button .fa-mobile-screen-button, .Function-Button .fa-solid, .Function-Button .fa-store {
   margin-right: 7px;
 }
-.Function-Button .Trio__li:hover .fa-mobile-screen-button:hover, .Function-Button .fa-solid:hover, .Function-Button .fa-store:hover {
+.Function-Button .fa-mobile-screen-button:hover, .Function-Button .fa-solid:hover, .Function-Button .fa-store:hover {
   background-color: #9356DC;
+  transform: scale(1.02);
+}
+
+.Function-Button li:hover {
+  background: #F5EDFF;
 }
 
 /* création du loader */
@@ -315,6 +317,7 @@
 .heart {
   width: 20px;
   height: 20px;
+  margin-left: 30px;
 }
 
 .fill,
@@ -398,6 +401,7 @@ img {
     flex-direction: column;
     padding: 12px 5px 12px 20px;
     gap: 11px;
+    margin: 0px 150px -27px 150px;
   }
 }
 
@@ -492,8 +496,16 @@ p {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  width: 100%;
+  height: 68px;
 }
-.menu__Card__Card-text {
+@media screen and (min-width: 992px) {
+  .menu__Card {
+    width: 100%;
+  }
+}
+
+.menu__Card-text {
   margin: 15px 0 0 5px;
   height: 58.07px;
   display: flex;
@@ -501,7 +513,8 @@ p {
   overflow: hidden;
   width: 100%;
 }
-.menu__Card__list-title {
+
+.menu__list-title {
   font-size: 18px;
   line-height: 21.09px;
   margin: 0 0 0 5px;
@@ -509,7 +522,8 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__Card__list-description {
+
+.menu__list-description {
   font-size: 18px;
   line-height: 17.58px;
   margin: 0 5px 0 5px;
@@ -517,14 +531,14 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__Card__list-price {
+
+.menu__list-price {
   font-size: 18px;
   line-height: 17.58px;
   color: #353535;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px 15px 0 0;
+  align-items: flex-end;
+  margin: 0px 0px 0px 40px;
 }
 
 /* checkbox animation */
@@ -551,7 +565,6 @@ p {
   width: 50px;
   height: 10px;
   cursor: pointer;
-  visibility: hidden;
 }
 
 .menu__list-animation {
@@ -560,10 +573,10 @@ p {
   align-items: center;
   border-radius: 0 15.04px 15.04px 0;
   background: #99E2D0;
-  height: 58px;
+  height: 96px;
+  padding: 13px;
+  margin: 1px 0px -58px 0px;
   visibility: hidden;
-  animation: shrink 1s forwards;
-  transition: all 1s;
 }
 
 .menu__Card:hover .menu__list-animation {
@@ -577,21 +590,9 @@ p {
     padding: 0px;
   }
   100% {
+    visibility: visible;
     width: 50px;
     padding: 10px;
-    visibility: visible;
-  }
-}
-@keyframes shrink {
-  0% {
-    width: 50px;
-    padding: 10px;
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-    width: 0px;
-    padding: 0px;
   }
 }
 .menu__list-1,
