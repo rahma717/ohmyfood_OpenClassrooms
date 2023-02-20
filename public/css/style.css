@@ -2,6 +2,19 @@
 /* les couleurs du  header */
 /* Les couleurs du footer */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
 .explorer__button {
   height: 20%;
   box-shadow: 2px 1px 16px -3px rgba(0, 0, 0, 0.25);
@@ -95,7 +108,7 @@
   padding: 0 40px;
   max-width: 1200px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
   .footer__container {
     display: flex;
     flex-direction: row-reverse;
@@ -369,11 +382,6 @@
   position: absolute;
   left: 20px;
 }
-
-.arrow {
-  position: absolute;
-  left: 20px;
-}
 .arrow i {
   color: #353535;
 }
@@ -390,12 +398,11 @@ img {
   position: relative;
   top: -30px;
   margin: 0px 0px -30px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px;
 }
 @media screen and (min-width: 992px) {
   .menu__container {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -444,6 +451,7 @@ img {
 /* animations cards */
 .Sub__menu {
   animation: Sub__menu 2500ms forwards;
+  width: 100%;
 }
 
 @keyframes Sub__menu {
@@ -489,17 +497,31 @@ p {
   color: #000000;
 }
 
+.menu__list-1,
+.menu__list-2,
+.menu__list-3,
+.menu__list-4,
+.menu__list-5,
+.menu__list-6,
+.menu__list-7,
+.menu__list-8,
+.menu__list-9 {
+  background-color: white;
+  box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
 .menu__Card {
   background: #FFFFFF;
   border-radius: 15.04px;
-  margin: 15px;
+  margin: 15px 0 15px 0;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  width: 100%;
   height: 68px;
+  width: 100%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .menu__Card {
     width: 100%;
   }
@@ -538,7 +560,7 @@ p {
   color: #353535;
   display: flex;
   align-items: flex-end;
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 12px 35px;
 }
 
 /* checkbox animation */
@@ -574,7 +596,7 @@ p {
   border-radius: 0 15.04px 15.04px 0;
   background: #99E2D0;
   height: 96px;
-  padding: 13px;
+  padding: 16px;
   margin: 1px 0px -58px 0px;
   visibility: hidden;
 }
@@ -595,20 +617,6 @@ p {
     padding: 10px;
   }
 }
-.menu__list-1,
-.menu__list-2,
-.menu__list-3,
-.menu__list-4,
-.menu__list-5,
-.menu__list-6,
-.menu__list-7,
-.menu__list-8,
-.menu__list-9 {
-  background-color: white;
-  box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-}
-
 /* command Button */
 .Bottom_Btn {
   display: flex;
@@ -630,19 +638,6 @@ p {
 .command_Btn:hover {
   transform: scale(1.2);
   opacity: 0.9;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

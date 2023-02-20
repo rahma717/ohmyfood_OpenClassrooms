@@ -1,27 +1,16 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
-
+@import "./Base/base";
 @import "./Components/button" ;
 @import "./Components/card";
-@import "./Components/form";
 
 @import "./Layout/footer";
 @import "./Layout/header";
-@import "./Layout/navigation";
 @import "./Layout/Function-Button";
 
 @import "./Pages/index";
-@import "./Pages/menu-1";
-@import "./Pages/menu-2";
-@import "./Pages/menu-3";
-@import "./Pages/menu-4";
-
-
-
-
-// @import "./Themes";
+@import "./Pages/menu-restaurants";
 
 // @import "./Vendors";
 
-@import "./Base/base";
 
