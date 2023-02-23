@@ -584,9 +584,9 @@ p {
   border-radius: 0 15.04px 15.04px 0;
   background: #FFFFFF;
   color: #FFFFFF;
-  width: 50px;
   height: 10px;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .menu__list-animation {
@@ -599,8 +599,21 @@ p {
   padding: 16px;
   margin: 1px 0px -58px 0px;
   visibility: hidden;
+  animation: shrink 1s forwards;
 }
 
+@keyframes shrink {
+  0% {
+    visibility: visible;
+    width: 60px;
+    padding: 10px;
+  }
+  100% {
+    visibility: hidden;
+    width: 0px;
+    padding: 0px;
+  }
+}
 .menu__Card:hover .menu__list-animation {
   animation: expand 1s forwards;
 }
@@ -613,7 +626,7 @@ p {
   }
   100% {
     visibility: visible;
-    width: 50px;
+    width: 60px;
     padding: 10px;
   }
 }
