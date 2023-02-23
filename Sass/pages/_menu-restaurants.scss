@@ -70,7 +70,7 @@ img {
 .Sub__menu
 {
     animation: Sub__menu 2500ms forwards;
-    width: 100%;
+    width: 70%;
 }
 @keyframes Sub__menu{
 0% {
@@ -132,8 +132,6 @@ img {
     background-color: white;
     box-shadow: 2px 1px 8px -3px rgb(0 0 0 / 10%);
     border-radius: 1rem;
-    display: flex;
-    padding: 10px;
   }
 .menu__Card
 {
@@ -146,7 +144,7 @@ img {
     height: 68px;
     width: 100%;
     @media screen and (max-width:992px) {
-      width: 100%;  
+    width: 100%;  
     }
 }
 .menu__Card-text
