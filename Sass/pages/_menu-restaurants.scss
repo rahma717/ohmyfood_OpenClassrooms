@@ -43,14 +43,13 @@ img {
         font-size: 28px;
         line-height: 41px;
         color: #101010;   
-    }
-    
+    }     
 .Sub__menu {
         display: flex;
         flex-direction: column;
         gap: 15px;
-     
-}
+            
+    }
     
 .Sub__menu-title {
     font-family: 'Roboto';
@@ -65,7 +64,146 @@ img {
     border-bottom: 3px solid $mint;
     width: 37px;
 }    
+.menu__list-1,
+  .menu__list-2,
+  .menu__list-3,
+  .menu__list-4,
+  .menu__list-5,
+  .menu__list-6,
+  .menu__list-7,
+  .menu__list-8,
+  .menu__list-9 {
+    background-color: white;
+    box-shadow: 2px 1px 8px -3px rgb(0 0 0 / 10%);
+    border-radius: 1rem;
+  }
+  .menu__Card
+  {
+      background: $white;
+      border-radius: 15.04px;
+      margin: 15px 0 15px 0;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      height: 68px;
+      width: 100%;
+      @media screen and (max-width:992px) {
+      width: 100%;  
+      }
+  }
+  .menu__Card-text
+  {
+      margin: 15px 0 0 5px;
+      height: 58.07px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      width: 100%;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 6px;   
+ }
+ p {
+    margin-left: 5px;
+    color: $black;
+ }
+ .menu__list-title
+{
+    font-size: 18px;
+    line-height: 21.09px;
+    margin: 0 0 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu__list-description
+{
+    font-size: 18px;
+    line-height: 17.58px;
+    margin: 0 5px 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu__list-price
+{
+    font-size: 18px;
+    line-height: 17.58px;
+    color: $darkcolor;
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 0px 12px 35px;
+}
+/* checkbox animation */
 
+.icon .fa-circle-check {
+    color: $white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 30px;
+}
+.icon:hover .fa-circle-check {
+    color: $white;
+    clip-path: circle(40%);
+    width: 30px;
+}
+.menu__list-checkbox {
+    display:flex;
+    align-items: center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: $white;
+    color: $white;
+    height: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+   
+}
+.menu__list-animation { 
+    color: $white;
+    display:flex;
+    align-items: center ;
+    border-radius: 0 15.04px 15.04px 0;
+    background: $mint;
+    height: 96px;
+    padding: 16px;
+    margin: 1px 0px -58px 0px; 
+    visibility: hidden;
+    animation: shrink 1s forwards;
+}
+@keyframes shrink {
+    0% {
+        visibility: visible;
+        width: 60px;
+        padding: 10px;
+      }
+      100% {
+        visibility: hidden;
+        width: 0px;
+        padding: 0px;
+        
+      }  
+}
+.menu__Card:hover .menu__list-animation {
+    animation: expand 1s forwards;
+  }
+
+  @keyframes expand {
+    0% {
+      visibility: visible;
+      width: 0px;
+      padding: 0px;
+    }
+    100% {
+      visibility: visible;
+      width: 60px;
+      padding: 10px;
+      
+    }
+  }
+  
 /* animations cards */
 .Sub__menu
 {
@@ -108,154 +246,8 @@ img {
 100% {
     transform: translateX(0);
 }
-}
-
- h4 {
-    font-size: 18px;
-    line-height: 21px;
-    margin-left: 6px;
-    
- }
- p {
-    margin-left: 5px;
-    color: $black;
- }
- .menu__list-1,
-  .menu__list-2,
-  .menu__list-3,
-  .menu__list-4,
-  .menu__list-5,
-  .menu__list-6,
-  .menu__list-7,
-  .menu__list-8,
-  .menu__list-9 {
-    background-color: white;
-    box-shadow: 2px 1px 8px -3px rgb(0 0 0 / 10%);
-    border-radius: 1rem;
-  }
-.menu__Card
-{
-    background: $white;
-    border-radius: 15.04px;
-    margin: 15px 0 15px 0;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    height: 68px;
-    width: 100%;
-    @media screen and (max-width:992px) {
-    width: 100%;  
-    }
-}
-.menu__Card-text
-{
-    margin: 15px 0 0 5px;
-    height: 58.07px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-}
-.menu__list-title
-{
-    font-size: 18px;
-    line-height: 21.09px;
-    margin: 0 0 0 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.menu__list-description
-{
-    
-    font-size: 18px;
-    line-height: 17.58px;
-    margin: 0 5px 0 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.menu__list-price
-{
-    font-size: 18px;
-    line-height: 17.58px;
-    color: $darkcolor;
-    display: flex;
-    align-items: flex-end;
-    margin: 0px 0px 12px 35px;
-
-}
-
-/* checkbox animation */
-
-.icon .fa-circle-check {
-    color: $white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: 30px;
-}
-.icon:hover .fa-circle-check {
-    color: $white;
-    clip-path: circle(40%);
-    width: 30px;
-}
-.menu__list-checkbox {
-    display:flex;
-    align-items: center;
-    border-radius: 0 15.04px 15.04px 0;
-    background: $white;
-    color: $white;
-    height: 10px;
-    cursor: pointer;
-    margin-left: 20px;
-   
-}
- .menu__list-animation { 
-    color: $white;
-    display:flex;
-    align-items: center ;
-    border-radius: 0 15.04px 15.04px 0;
-    background: $mint;
-    height: 96px;
-    padding: 16px;
-    margin: 1px 0px -58px 0px; 
-    visibility: hidden;
-    animation: shrink 1s forwards;
-}
-@keyframes shrink {
-    0% {
-        visibility: visible;
-        width: 60px;
-        padding: 10px;
-      }
-      100% {
-        visibility: hidden;
-        width: 0px;
-        padding: 0px;
-        
-      }  
-}
-.menu__Card:hover .menu__list-animation {
-    animation: expand 1s forwards;
-  }
-
-  @keyframes expand {
-    0% {
-      visibility: visible;
-      width: 0px;
-      padding: 0px;
-    }
-    100% {
-      visibility: visible;
-      width: 60px;
-      padding: 10px;
-      
-    }
-  }
-    
-  /* command Button */
+} 
+ /* command Button */
 
 .Bottom_Btn {
     display: flex;
@@ -271,10 +263,39 @@ img {
     border:none;
     font-size: 16px;
     margin: 1.5rem 0 1.5rem;
-    
     cursor: pointer;
     &:hover {
         transform: scale(1.2);
         opacity: 0.9;
 }
 }
+
+/* CSS des restaurants en mobile first */
+@media screen and (max-width: 574px) {
+.menu__container {
+    margin: 0px -10px -30px 0px;
+}
+.menu__section {
+    margin-left: 15px;
+}
+.Sub__menu {
+    width: 100%;
+}
+.Sub__menu-title {
+    margin: 15px 0 11px;
+}
+}
+/* Version tablette des autres pages des restaurants */
+@media screen and (min-width: 575px) and (max-width: 991px){
+    .menu__title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Sub__menu-title {
+        margin: 15px 0 11px;
+    }
+    .Sub__menu {
+        width: 100%;
+    }
+}
+
