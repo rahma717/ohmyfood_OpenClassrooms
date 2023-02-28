@@ -139,12 +139,12 @@ img {
 /* checkbox animation */
 
 .icon .fa-circle-check {
-    color: $white;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    width: 30px;
-}
+    justify-content: center;
+    align-items: center; 
+    
+ }
 .icon:hover .fa-circle-check {
     color: $white;
     clip-path: circle(40%);
@@ -153,6 +153,7 @@ img {
 .menu__list-checkbox {
     display:flex;
     align-items: center;
+    justify-content: center;
     border-radius: 0 15.04px 15.04px 0;
     background: $white;
     color: $white;
@@ -165,6 +166,7 @@ img {
     color: $white;
     display:flex;
     align-items: center ;
+    justify-content: center;
     border-radius: 0 15.04px 15.04px 0;
     background: $mint;
     height: 96px;

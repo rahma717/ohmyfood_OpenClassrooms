@@ -527,11 +527,10 @@ p {
 
 /* checkbox animation */
 .icon .fa-circle-check {
-  color: #FFFFFF;
   cursor: pointer;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 30px;
 }
 
 .icon:hover .fa-circle-check {
@@ -543,6 +542,7 @@ p {
 .menu__list-checkbox {
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 0 15.04px 15.04px 0;
   background: #FFFFFF;
   color: #FFFFFF;
@@ -555,6 +555,7 @@ p {
   color: #FFFFFF;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 0 15.04px 15.04px 0;
   background: #99E2D0;
   height: 96px;
