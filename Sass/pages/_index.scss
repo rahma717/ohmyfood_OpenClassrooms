@@ -34,6 +34,7 @@
     opacity: 0;
 }
 }
+
 .container {
     width: 100%;
     animation: container 3000ms;
@@ -137,7 +138,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    animation: fill 1.5s ease-in-out;
+    animation: fill 2.5s ease-in-out;
   }
   
   @keyframes reverse-color {
@@ -150,7 +151,7 @@
       font-weight: bold;
     }
     to {
-      opacity: 1;
+      opacity: 0;
       background: white;
       background-clip: text;
       -webkit-background-clip: text;
